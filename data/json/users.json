@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Elie Sfeir",
+    "password": "ElieTGMMC1",
+    "type": "MEMBER"
+  },
+  {
+    "id": 2,
+    "name": "Joseph Sfeir",
+    "password": "Joseph123",
+    "type": "MEMBER"
+  },
+  {
+    "id": 3,
+    "name": "Georges",
+    "password": "af6e967f39312c00d686f16b0b640289f5efb9d21b8e11804453e7f54ab829ea",
+    "type": "ADMINISTRATOR"
+  },
+  {
+    "id": 4,
+    "name": "Internalizable",
+    "password": "2f3d856cd1a5f7d0769cf8356846aebd497894412f9a76c165bd4ce5dc9a80c7",
+    "type": "VISITOR"
+  }
+]

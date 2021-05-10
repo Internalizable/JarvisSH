@@ -1,0 +1,21 @@
+[
+  {
+    "id":"1",
+    "userID": "1",
+    "roomName":"Room 1",
+    "epochMillis":"1619259593434",
+    "accessoryID": "1",
+    "status":
+    [
+      "Turned ON", "Light Intensity set to 85%", "Sleep timer of 4 minutes"
+    ]
+  },
+  {
+    "id":"2",
+    "userID": "1",
+    "roomName":"Room 2",
+    "epochMillis":"1719259593434",
+    "accessoryID": "2",
+    "status":[]
+  }
+]

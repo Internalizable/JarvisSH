@@ -1,0 +1,22 @@
+<operations>
+   <operation>
+      <id>2</id>
+      <userID>1</userID>
+      <roomName>Room 2</roomName>
+      <epochMillis>1719259593434</epochMillis>
+      <accessoryID>2</accessoryID>
+      <status class="java.util.ArrayList"/>
+   </operation>
+   <operation>
+      <id>1</id>
+      <userID>1</userID>
+      <roomName>Room 1</roomName>
+      <epochMillis>1619259593434</epochMillis>
+      <accessoryID>1</accessoryID>
+      <status class="java.util.ArrayList">
+         <string>Turned ON</string>
+         <string>Light Intensity set to 85%</string>
+         <string>Sleep timer of 4 minutes</string>
+      </status>
+   </operation>
+</operations>

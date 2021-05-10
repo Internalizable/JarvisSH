@@ -1,0 +1,54 @@
+[
+  {
+    "id": "1",
+    "name": "Camera 1",
+    "resolution": "18",
+    "range": "10",
+    "angle": "WIDE",
+    "manufacturer":"CISCO TEL.",
+    "type":"CAMERA"
+  },
+  {
+    "id": "2",
+    "name": "Temperature Control System",
+    "temperature": "22.5",
+    "fanSpeed": "MEDIUM",
+    "manufacturer":"ORCA O.",
+    "type":"TEMPERATURE"
+  },
+  {
+    "id": "3",
+    "name": "Smart Samsung TV",
+    "resolution": "1800x1200",
+    "width": "55",
+    "height": "20",
+    "is4K": "true",
+    "manufacturer": "Samsung",
+    "type":"TV"
+  },
+  {
+    "id": "4",
+    "name": "Motion Sensor",
+    "manufacturer": "Wolff Man.",
+    "type": "MOTION",
+    "range": "50",
+    "height": "10"
+  },
+  {
+    "id": "5",
+    "name": "FireDetector",
+    "manufacturer": "Impact",
+    "type": "FIRE",
+    "co2TankCapacity": "150",
+    "smokeLimit": "15",
+    "isLoaded": "true"
+  },
+  {
+    "id": "6",
+    "name": "Living Room Light 1",
+    "manufacturer": "Light Source Inc.",
+    "type": "LIGHTING",
+    "intensity": "10",
+    "maxIntensity": "20"
+  }
+]

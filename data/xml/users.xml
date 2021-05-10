@@ -1,0 +1,14 @@
+<users>
+   <user>
+      <id>1</id>
+      <name>Elie Sfeir</name>
+      <password>ElieTGMMC1</password>
+      <type>ADMINISTRATOR</type>
+   </user>
+   <user>
+      <id>2</id>
+      <name>Joseph Sfeir</name>
+      <password>Joseph123</password>
+      <type>MEMBER</type>
+   </user>
+</users>
