@@ -5,6 +5,8 @@ import lombok.Setter;
 import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.IControllable;
 import me.internalizable.jarvis.internal.IMonitor;
+import me.internalizable.jarvis.internal.Operation;
+import me.internalizable.jarvis.utils.JarvisLists;
 import org.simpleframework.xml.Element;
 
 @Getter @Setter

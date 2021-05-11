@@ -19,6 +19,6 @@ public class AccessoryIDFilter implements IFilter {
 
     @Override
     public Predicate<Operation> getPredicate(Object filterValue) {
-        return operation -> operation.getAccessoryID() ==  Integer.parseInt(String.valueOf(filterValue));
+        return operation -> operation.getAccessoryID() == Math.toIntExact((Long) filterValue);
     }
 }

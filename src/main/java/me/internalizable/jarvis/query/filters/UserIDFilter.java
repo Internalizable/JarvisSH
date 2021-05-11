@@ -19,6 +19,6 @@ public class UserIDFilter implements IFilter {
 
     @Override
     public Predicate<Operation> getPredicate(Object filterValue) {
-        return operation -> operation.getUserID() == (int) filterValue;
+        return operation -> operation.getUserID() == Math.toIntExact((Long) filterValue);
     }
 }
