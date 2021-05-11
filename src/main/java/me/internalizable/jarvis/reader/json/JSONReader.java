@@ -4,8 +4,15 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
+import com.google.gson.typeadapters.RuntimeTypeAdapterFactory;
 import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.Operation;
+import me.internalizable.jarvis.internal.types.appliances.LightingAccessory;
+import me.internalizable.jarvis.internal.types.appliances.TVAccessory;
+import me.internalizable.jarvis.internal.types.appliances.TemperatureAccessory;
+import me.internalizable.jarvis.internal.types.security.CameraAccessory;
+import me.internalizable.jarvis.internal.types.security.FireAccessory;
+import me.internalizable.jarvis.internal.types.security.MotionSensor;
 import me.internalizable.jarvis.internal.users.User;
 import me.internalizable.jarvis.reader.CollectionType;
 import me.internalizable.jarvis.reader.IReader;
@@ -27,7 +34,16 @@ public class JSONReader implements IReader, IWriter {
         ACCESSORY_TYPE = new TypeToken<List<Accessory>>() {}.getType();
         OPERATION_TYPE = new TypeToken<List<Operation>>() {}.getType();
         USER_TYPE = new TypeToken<List<User>>() {}.getType();
-        gson = new GsonBuilder().registerTypeAdapter(ACCESSORY_TYPE, new AccessoryAdapter()).setPrettyPrinting().create();
+
+        RuntimeTypeAdapterFactory<Accessory> runtimeTypeAdapterFactory = RuntimeTypeAdapterFactory.of(Accessory.class, "type")
+                .registerSubtype(LightingAccessory.class, "LIGHTING")
+                .registerSubtype(TemperatureAccessory.class, "TEMPERATURE")
+                .registerSubtype(TVAccessory.class, "TV")
+                .registerSubtype(CameraAccessory.class, "CAMERA")
+                .registerSubtype(FireAccessory.class, "FIRE")
+                .registerSubtype(MotionSensor.class, "MOTION");
+
+        gson = new GsonBuilder().registerTypeAdapterFactory(runtimeTypeAdapterFactory).setPrettyPrinting().create();
     }
 
     @Override
