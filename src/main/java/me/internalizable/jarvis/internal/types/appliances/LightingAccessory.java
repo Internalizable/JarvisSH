@@ -29,17 +29,17 @@ public class LightingAccessory extends Accessory implements IMonitor, IControlla
 
     @Override
     public void generateData() {
-
+        System.out.println("Generating data for the Light system");
     }
 
     @Override
     public void turnOn() {
-
+        System.out.println("Turning on the light accessory");
     }
 
     @Override
     public void turnOff() {
-
+        System.out.println("Turning off the light accessory");
     }
 
     @Override

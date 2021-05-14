@@ -33,17 +33,17 @@ public class TVAccessory extends Accessory implements IMonitor, IControllable {
 
     @Override
     public void generateData() {
-
+        System.out.println("Generating data for the TV system");
     }
 
     @Override
     public void turnOn() {
-
+        System.out.println("Turning on the TV accessory");
     }
 
     @Override
     public void turnOff() {
-
+        System.out.println("Turning off the TV accessory");
     }
 
     @Override

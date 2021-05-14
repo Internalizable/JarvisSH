@@ -28,17 +28,17 @@ public class TemperatureAccessory extends Accessory implements IMonitor, IContro
 
     @Override
     public void generateData() {
-
+        System.out.println("Generating data for the temperature system");
     }
 
     @Override
     public void turnOn() {
-
+        System.out.println("Turning on the temperature accessory");
     }
 
     @Override
     public void turnOff() {
-
+        System.out.println("Turning off the temperature accessory");
     }
 
     public enum FanSpeed {
