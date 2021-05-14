@@ -6,16 +6,17 @@ import me.internalizable.jarvis.internal.users.User;
 import me.internalizable.jarvis.reader.CollectionType;
 import me.internalizable.jarvis.reader.IReader;
 import me.internalizable.jarvis.reader.IWriter;
-import me.internalizable.jarvis.reader.ParserType;
 import me.internalizable.jarvis.reader.xml.parsers.XMLAccessoryParser;
 import me.internalizable.jarvis.reader.xml.parsers.XMLOperationParser;
 import me.internalizable.jarvis.reader.xml.parsers.XMLUserParser;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
-import static me.internalizable.jarvis.reader.CollectionType.*;
-import static me.internalizable.jarvis.reader.ParserType.*;
+
 import java.io.File;
 import java.util.List;
+
+import static me.internalizable.jarvis.reader.CollectionType.*;
+import static me.internalizable.jarvis.reader.ParserType.XML;
 
 public class XMLReader implements IReader, IWriter {
 

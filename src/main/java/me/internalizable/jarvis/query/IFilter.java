@@ -11,6 +11,7 @@ public interface IFilter {
     }
 
     int getFilterID();
+
     Predicate<Operation> getPredicate(Object filterValue);
 
 }

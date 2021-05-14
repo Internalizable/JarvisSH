@@ -1,90 +1,92 @@
 [
   {
-    "id":"1",
+    "id": "1",
     "userID": "1",
-    "roomName":"Room 1",
-    "epochMillis":"1619259593434",
+    "roomName": "Room 1",
+    "epochMillis": "1619259593434",
     "accessoryID": "6",
-    "status":
-    [
-      "Turned ON", "Light Intensity set to 85%"
+    "status": [
+      "Turned ON",
+      "Light Intensity set to 85%"
     ]
   },
   {
-    "id":"2",
+    "id": "2",
     "userID": "1",
-    "roomName":"Room 2",
-    "epochMillis":"1719259593434",
+    "roomName": "Room 2",
+    "epochMillis": "1719259593434",
     "accessoryID": "2",
     "status": [
       "Turned ON"
     ]
   },
   {
-    "id":"3",
+    "id": "3",
     "userID": "4",
-    "roomName":"Living Room",
-    "epochMillis":"1719259693434",
+    "roomName": "Living Room",
+    "epochMillis": "1719259693434",
     "accessoryID": "3",
     "status": [
       "Turned ON"
     ]
   },
   {
-    "id":"4",
+    "id": "4",
     "userID": "3",
-    "roomName":"Living Room",
-    "epochMillis":"1719259693534",
+    "roomName": "Living Room",
+    "epochMillis": "1719259693534",
     "accessoryID": "3",
     "status": [
       "Set Volume to 95%"
     ]
   },
   {
-    "id":"5",
+    "id": "5",
     "userID": "1",
-    "roomName":"Room 2",
-    "epochMillis":"1719259693634",
+    "roomName": "Room 2",
+    "epochMillis": "1719259693634",
     "accessoryID": "2",
     "status": [
-      "Set temperature to 21C", "Set Fan Control to MEDIUM"
+      "Set temperature to 21C",
+      "Set Fan Control to MEDIUM"
     ]
   },
   {
-    "id":"6",
+    "id": "6",
     "userID": "3",
-    "roomName":"Kitchen",
-    "epochMillis":"1719259693734",
+    "roomName": "Kitchen",
+    "epochMillis": "1719259693734",
     "accessoryID": "4",
     "status": [
       "Detected motion"
     ]
   },
   {
-    "id":"7",
+    "id": "7",
     "userID": "4",
-    "roomName":"Kitchen",
-    "epochMillis":"1719259793834",
+    "roomName": "Kitchen",
+    "epochMillis": "1719259793834",
     "accessoryID": "5",
     "status": [
-      "CO2 Detected in Room", "Starting filter"
+      "CO2 Detected in Room",
+      "Starting filter"
     ]
   },
   {
-    "id":"8",
+    "id": "8",
     "userID": "4",
-    "roomName":"Kitchen",
-    "epochMillis":"1719259797834",
+    "roomName": "Kitchen",
+    "epochMillis": "1719259797834",
     "accessoryID": "1",
     "status": [
       "Turned ON"
     ]
   },
   {
-    "id":"9",
+    "id": "9",
     "userID": "3",
-    "roomName":"Room 1",
-    "epochMillis":"1719259894934",
+    "roomName": "Room 1",
+    "epochMillis": "1719259894934",
     "accessoryID": "6",
     "status": [
       "Turned OFF"

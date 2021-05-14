@@ -8,24 +8,23 @@ import me.internalizable.jarvis.utils.StaticUtils;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Getter @Setter
+@Getter
+@Setter
 @Root(name = "user")
 @Entity("users")
 public class User {
-    public User() {}
-
     @Id
     @Element(name = "id")
     private int id;
-
     @Element(name = "name")
     private String name;
-
     @Element(name = "password")
     private String password;
-
     @Element(name = "type")
     private UserType type;
+
+    public User() {
+    }
 
     public void printUser() {
         System.out.println(StaticUtils.getDivider());

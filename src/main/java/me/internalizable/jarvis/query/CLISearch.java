@@ -1,8 +1,5 @@
 package me.internalizable.jarvis.query;
 
-import javafx.application.Platform;
-import me.internalizable.jarvis.Jarvis;
-import me.internalizable.jarvis.gui.App;
 import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.Operation;
 import me.internalizable.jarvis.internal.users.User;
@@ -12,11 +9,12 @@ import me.internalizable.jarvis.utils.FormatMarkdown;
 import me.internalizable.jarvis.utils.JarvisLists;
 import me.internalizable.jarvis.utils.StaticUtils;
 
-import java.io.IOException;
-import java.text.Normalizer;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
 import java.util.function.Predicate;
 
 public class CLISearch {
@@ -54,7 +52,7 @@ public class CLISearch {
             System.out.print(StaticUtils.getFormattedText("Password", FormatMarkdown.UNDERLINED) + ": ");
             password = scanner.next();
 
-            if(JarvisLists.hasLogin(username, password))
+            if (JarvisLists.hasLogin(username, password))
                 break;
             else {
                 System.out.println("\n" + StaticUtils.getFormattedText("Wrong login details, try again!", FormatMarkdown.INVERTED));
@@ -62,7 +60,7 @@ public class CLISearch {
             }
 
 
-        } while(true);
+        } while (true);
 
         openMainMenu();
     }
@@ -85,7 +83,7 @@ public class CLISearch {
             System.out.print(StaticUtils.getFormattedText("Privileges", FormatMarkdown.UNDERLINED) + ": ");
             privilegeType = scanner.next();
 
-            if(JarvisLists.hasLogin(username, password))
+            if (JarvisLists.hasLogin(username, password))
                 System.out.println("\n" + StaticUtils.getFormattedText("A user with that login already exists!", FormatMarkdown.INVERTED));
             else {
                 try {
@@ -97,7 +95,7 @@ public class CLISearch {
                 }
 
             }
-        } while(true);
+        } while (true);
 
         openMainMenu();
     }
@@ -126,7 +124,7 @@ public class CLISearch {
                 default -> System.out.println("Unknown data point entry, try again");
             }
 
-        } while(choice < 1 || choice > 4);
+        } while (choice < 1 || choice > 4);
     }
 
     private void openFilterMenu() {
@@ -141,7 +139,7 @@ public class CLISearch {
             FilterUtils.getAvailableFilters().forEach(filter -> {
                 String nonFormattedString = filter.getFilterID() + "- " + filter.getFilterName();
 
-                if(appliedFilters.contains(filter))
+                if (appliedFilters.contains(filter))
                     System.out.println(StaticUtils.getFormattedText(nonFormattedString, FormatMarkdown.STRIKETHROUGH));
                 else
                     System.out.println(nonFormattedString);
@@ -151,10 +149,11 @@ public class CLISearch {
 
             System.out.print("Applied filters: ");
 
-            if(appliedFilters.size() == 0)
+            if (appliedFilters.size() == 0)
                 System.out.print(StaticUtils.getFormattedText("There are currently no applied filters", FormatMarkdown.ITALIC));
 
-            else appliedFilters.forEach(filter -> System.out.print(StaticUtils.getFormattedText(filter.getClass().getSimpleName(), FormatMarkdown.ITALIC) + " "));
+            else
+                appliedFilters.forEach(filter -> System.out.print(StaticUtils.getFormattedText(filter.getClass().getSimpleName(), FormatMarkdown.ITALIC) + " "));
 
             System.out.println("\n");
             System.out.println(StaticUtils.getFormattedText("You may enter `-1` at any moment to clear current filters", FormatMarkdown.ITALIC));
@@ -162,7 +161,7 @@ public class CLISearch {
 
             choice = scanner.nextInt();
 
-            if(choice == -1) {
+            if (choice == -1) {
                 clearFilters();
                 System.out.print("The filters have been cleaned, reopening menu");
 
@@ -183,7 +182,7 @@ public class CLISearch {
                 return;
             }
 
-            if(choice == FilterUtils.getAvailableFilters().size() + 1) {
+            if (choice == FilterUtils.getAvailableFilters().size() + 1) {
                 appliedFilters.clear();
                 openMainMenu();
                 return;
@@ -193,8 +192,8 @@ public class CLISearch {
 
             IFilter chosenFilter = FilterUtils.getAvailableFilters().stream().filter(filter -> filter.getFilterID() == finalChoice).findFirst().orElse(null);
 
-            if(chosenFilter != null) {
-                if(!appliedFilters.contains(chosenFilter)) {
+            if (chosenFilter != null) {
+                if (!appliedFilters.contains(chosenFilter)) {
                     System.out.print("Enter your query: ");
 
                     scanner.nextLine();
@@ -202,13 +201,13 @@ public class CLISearch {
 
                     SimpleDateFormat dateFormatter = new SimpleDateFormat("dd/MM/yyyy");
 
-                    if(finalChoice ==  12)
+                    if (finalChoice == 12)
                         dateFormatter = new SimpleDateFormat("MM/yyyy");
-                    else if(finalChoice == 13)
+                    else if (finalChoice == 13)
                         dateFormatter = new SimpleDateFormat("yyyy");
 
-                    switch(finalChoice) {
-                        case 1,4,8 -> {
+                    switch (finalChoice) {
+                        case 1, 4, 8 -> {
                             try {
                                 Long toBeSent = Long.parseLong(inputString);
 
@@ -216,19 +215,19 @@ public class CLISearch {
                                 appliedFilters.add(chosenFilter);
 
                                 showFilteredResult();
-                            } catch(NumberFormatException exception) {
+                            } catch (NumberFormatException exception) {
                                 System.out.println("ERROR: You cannot input a non long value for the ID");
                             }
                         }
 
-                        case 2,3,5,6,7,9,10 -> {
+                        case 2, 3, 5, 6, 7, 9, 10 -> {
                             appliedPredicates.add(chosenFilter.getPredicate(inputString));
                             appliedFilters.add(chosenFilter);
 
                             showFilteredResult();
                         }
 
-                        case 11,12,13 -> {
+                        case 11, 12, 13 -> {
                             try {
                                 Date chosenDate = dateFormatter.parse(inputString);
 
@@ -246,14 +245,14 @@ public class CLISearch {
             } else
                 System.out.println("No filter with that ID was found. Please try again");
 
-        } while(choice != FilterUtils.getAvailableFilters().size() + 1);
+        } while (choice != FilterUtils.getAvailableFilters().size() + 1);
 
     }
 
     private void showFilteredResult() {
-        Predicate<Operation> pred = appliedPredicates.stream().reduce(Predicate::and).orElse(x->true);
+        Predicate<Operation> pred = appliedPredicates.stream().reduce(Predicate::and).orElse(x -> true);
 
-        if(JarvisLists.getOperationList().stream().noneMatch(pred))
+        if (JarvisLists.getOperationList().stream().noneMatch(pred))
             System.out.println("The stream returned with no result.");
         else
             JarvisLists.getOperationList().stream().filter(pred).forEach(Operation::printSummaryOperation);
@@ -283,7 +282,7 @@ public class CLISearch {
             choice = scanner.nextInt();
             scanner.nextLine();
 
-            if(choice == 7) {
+            if (choice == 7) {
                 openMainMenu();
                 return;
             }
@@ -294,7 +293,7 @@ public class CLISearch {
                     System.out.println("Enter the amount of the last accessories you'd like to check: ");
                     int n = scanner.nextInt();
 
-                    while(n <= 0) {
+                    while (n <= 0) {
                         System.out.print("The size cannot be negative: ");
                         n = scanner.nextInt();
                     }
@@ -337,7 +336,7 @@ public class CLISearch {
                 default -> System.out.println("Unknown data point entry, try again");
             }
 
-        } while(true);
+        } while (true);
 
     }
 }

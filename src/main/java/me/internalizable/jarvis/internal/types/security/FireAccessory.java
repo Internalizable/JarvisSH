@@ -6,7 +6,8 @@ import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.IMonitor;
 import org.simpleframework.xml.Element;
 
-@Getter @Setter
+@Getter
+@Setter
 public class FireAccessory extends Accessory implements IMonitor {
 
     @Element(name = "smokeLimit")

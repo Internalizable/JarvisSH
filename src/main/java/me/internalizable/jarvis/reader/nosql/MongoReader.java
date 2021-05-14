@@ -1,12 +1,9 @@
 package me.internalizable.jarvis.reader.nosql;
 
-import com.google.common.reflect.ClassPath;
 import com.mongodb.client.MongoClients;
 import dev.morphia.Datastore;
 import dev.morphia.Morphia;
-import dev.morphia.query.Query;
 import lombok.Getter;
-import me.internalizable.jarvis.Jarvis;
 import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.Operation;
 import me.internalizable.jarvis.internal.users.User;
@@ -44,7 +41,7 @@ public class MongoReader implements IReader, IWriter {
     public void readData() {
         List<Accessory> accessories = new ArrayList<>();
         setClasses.forEach(clazz -> accessories.addAll(datastore.find(clazz).iterator().toList()));
-        
+
         List<Operation> operations = datastore.find(Operation.class).iterator().toList();
         List<User> users = datastore.find(User.class).iterator().toList();
 

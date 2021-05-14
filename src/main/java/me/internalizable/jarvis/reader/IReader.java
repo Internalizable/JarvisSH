@@ -4,6 +4,7 @@ import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.Operation;
 import me.internalizable.jarvis.internal.users.User;
 import me.internalizable.jarvis.utils.JarvisLists;
+
 import java.util.Comparator;
 import java.util.List;
 

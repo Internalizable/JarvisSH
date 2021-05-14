@@ -7,7 +7,8 @@ import me.internalizable.jarvis.internal.IControllable;
 import me.internalizable.jarvis.internal.IMonitor;
 import org.simpleframework.xml.Element;
 
-@Getter @Setter
+@Getter
+@Setter
 public class TVAccessory extends Accessory implements IMonitor, IControllable {
 
     @Element(name = "resolution")

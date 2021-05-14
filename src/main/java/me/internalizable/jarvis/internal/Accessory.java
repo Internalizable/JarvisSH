@@ -8,7 +8,8 @@ import me.internalizable.jarvis.utils.StaticUtils;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
-@Getter @Setter
+@Getter
+@Setter
 @Root(name = "accessory")
 @Entity("accessories")
 public class Accessory {
@@ -26,7 +27,8 @@ public class Accessory {
     @Element(name = "type")
     private AccessoryType type;
 
-    public Accessory() {}
+    public Accessory() {
+    }
 
     public Accessory(int id) {
         this.id = id;

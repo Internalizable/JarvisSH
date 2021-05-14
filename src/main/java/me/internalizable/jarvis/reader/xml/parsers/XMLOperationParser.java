@@ -10,11 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Root(name = "operations")
-@Getter @Setter
+@Getter
+@Setter
 public class XMLOperationParser {
 
-    @ElementList(inline=true)
+    @ElementList(inline = true)
     private List<Operation> list = new ArrayList<>();
 
-    public XMLOperationParser() {}
+    public XMLOperationParser() {
+    }
 }

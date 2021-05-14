@@ -8,6 +8,7 @@ public class StaticUtils {
 
     /**
      * A method that gets the formatted divider of our CLI.
+     *
      * @return the formatted divider used in CLI.
      */
     public static String getDivider() {
@@ -16,7 +17,8 @@ public class StaticUtils {
 
     /**
      * Format our text in the command line given the markdown.
-     * @param text - The text that will be converted.
+     *
+     * @param text     - The text that will be converted.
      * @param markdown - The markdown type to apply.
      * @return formatted text.
      */
@@ -26,6 +28,7 @@ public class StaticUtils {
 
     /**
      * Converts a date to a local date. Used for comparing dates.
+     *
      * @param dateToConvert - The date to convert into local date.
      * @return a LocalDate
      */

@@ -10,11 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Root(name = "users")
-@Getter @Setter
+@Getter
+@Setter
 public class XMLUserParser {
 
-    @ElementList(inline=true)
+    @ElementList(inline = true)
     private List<User> list = new ArrayList<>();
 
-    public XMLUserParser() {}
+    public XMLUserParser() {
+    }
 }

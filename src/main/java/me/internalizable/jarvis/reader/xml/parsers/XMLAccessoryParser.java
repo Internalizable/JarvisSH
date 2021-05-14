@@ -17,19 +17,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Root(name = "accessories")
-@Getter @Setter
+@Getter
+@Setter
 public class XMLAccessoryParser {
 
     @ElementListUnion({
-            @ElementList(entry="lighting", inline= true, type= LightingAccessory.class),
-            @ElementList(entry="tv", inline= true, type= TVAccessory.class),
-            @ElementList(entry="temperature", inline= true, type= TemperatureAccessory.class),
-            @ElementList(entry = "camera", inline=true, type= CameraAccessory.class),
-            @ElementList(entry = "fire", inline=true, type= FireAccessory.class),
-            @ElementList(entry = "motion", inline = true, type= MotionSensor.class),
-            @ElementList(entry = "unassigned", inline = true, type= Accessory.class)
+            @ElementList(entry = "lighting", inline = true, type = LightingAccessory.class),
+            @ElementList(entry = "tv", inline = true, type = TVAccessory.class),
+            @ElementList(entry = "temperature", inline = true, type = TemperatureAccessory.class),
+            @ElementList(entry = "camera", inline = true, type = CameraAccessory.class),
+            @ElementList(entry = "fire", inline = true, type = FireAccessory.class),
+            @ElementList(entry = "motion", inline = true, type = MotionSensor.class),
+            @ElementList(entry = "unassigned", inline = true, type = Accessory.class)
     })
     private List<Accessory> list = new ArrayList<>();
 
-    public XMLAccessoryParser() {}
+    public XMLAccessoryParser() {
+    }
 }

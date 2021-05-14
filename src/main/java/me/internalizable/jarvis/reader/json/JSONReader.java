@@ -17,11 +17,16 @@ import me.internalizable.jarvis.internal.users.User;
 import me.internalizable.jarvis.reader.CollectionType;
 import me.internalizable.jarvis.reader.IReader;
 import me.internalizable.jarvis.reader.IWriter;
-import static me.internalizable.jarvis.reader.CollectionType.*;
-import static me.internalizable.jarvis.reader.ParserType.*;
-import java.io.*;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.List;
+
+import static me.internalizable.jarvis.reader.CollectionType.*;
+import static me.internalizable.jarvis.reader.ParserType.JSON;
 
 public class JSONReader implements IReader, IWriter {
 
@@ -31,9 +36,12 @@ public class JSONReader implements IReader, IWriter {
     private final Gson gson;
 
     public JSONReader() {
-        ACCESSORY_TYPE = new TypeToken<List<Accessory>>() {}.getType();
-        OPERATION_TYPE = new TypeToken<List<Operation>>() {}.getType();
-        USER_TYPE = new TypeToken<List<User>>() {}.getType();
+        ACCESSORY_TYPE = new TypeToken<List<Accessory>>() {
+        }.getType();
+        OPERATION_TYPE = new TypeToken<List<Operation>>() {
+        }.getType();
+        USER_TYPE = new TypeToken<List<User>>() {
+        }.getType();
 
         RuntimeTypeAdapterFactory<Accessory> runtimeTypeAdapterFactory = RuntimeTypeAdapterFactory.of(Accessory.class, "type")
                 .registerSubtype(LightingAccessory.class, "LIGHTING")

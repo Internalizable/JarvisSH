@@ -1,54 +1,54 @@
 <accessories>
-   <camera>
-      <id>1</id>
-      <name>Camera 1</name>
-      <manufacturer>CISCO TEL.</manufacturer>
-      <type>CAMERA</type>
-      <resolution>18.0</resolution>
-      <range>10.0</range>
-      <angle>WIDE</angle>
-   </camera>
-   <temperature>
-      <id>2</id>
-      <name>Temperature Control System</name>
-      <manufacturer>ORCA O.</manufacturer>
-      <type>TEMPERATURE</type>
-      <temperature>22.5</temperature>
-      <fanSpeed>MEDIUM</fanSpeed>
-   </temperature>
-   <tv>
-      <id>3</id>
-      <name>Smart Samsung TV</name>
-      <manufacturer>Samsung</manufacturer>
-      <type>TV</type>
-      <resolution>1800x1200</resolution>
-      <width>55.0</width>
-      <height>20.0</height>
-      <is4K>true</is4K>
-   </tv>
-   <motion>
-      <id>4</id>
-      <name>Motion Sensor</name>
-      <manufacturer>Wolff Man.</manufacturer>
-      <type>MOTION</type>
-      <range>50.0</range>
-      <height>10.0</height>
-   </motion>
-   <fire>
-      <id>5</id>
-      <name>FireDetector</name>
-      <manufacturer>Impact</manufacturer>
-      <type>FIRE</type>
-      <smokeLimit>15.0</smokeLimit>
-      <co2TankCapacity>150.0</co2TankCapacity>
-      <isLoaded>true</isLoaded>
-   </fire>
-   <lighting>
-      <id>6</id>
-      <name>Living Room Light 1</name>
-      <manufacturer>Light Source Inc.</manufacturer>
-      <type>LIGHTING</type>
-      <intensity>10.0</intensity>
-      <maxIntensity>20.0</maxIntensity>
-   </lighting>
+    <camera>
+        <id>1</id>
+        <name>Camera 1</name>
+        <manufacturer>CISCO TEL.</manufacturer>
+        <type>CAMERA</type>
+        <resolution>18.0</resolution>
+        <range>10.0</range>
+        <angle>WIDE</angle>
+    </camera>
+    <temperature>
+        <id>2</id>
+        <name>Temperature Control System</name>
+        <manufacturer>ORCA O.</manufacturer>
+        <type>TEMPERATURE</type>
+        <temperature>22.5</temperature>
+        <fanSpeed>MEDIUM</fanSpeed>
+    </temperature>
+    <tv>
+        <id>3</id>
+        <name>Smart Samsung TV</name>
+        <manufacturer>Samsung</manufacturer>
+        <type>TV</type>
+        <resolution>1800x1200</resolution>
+        <width>55.0</width>
+        <height>20.0</height>
+        <is4K>true</is4K>
+    </tv>
+    <motion>
+        <id>4</id>
+        <name>Motion Sensor</name>
+        <manufacturer>Wolff Man.</manufacturer>
+        <type>MOTION</type>
+        <range>50.0</range>
+        <height>10.0</height>
+    </motion>
+    <fire>
+        <id>5</id>
+        <name>FireDetector</name>
+        <manufacturer>Impact</manufacturer>
+        <type>FIRE</type>
+        <smokeLimit>15.0</smokeLimit>
+        <co2TankCapacity>150.0</co2TankCapacity>
+        <isLoaded>true</isLoaded>
+    </fire>
+    <lighting>
+        <id>6</id>
+        <name>Living Room Light 1</name>
+        <manufacturer>Light Source Inc.</manufacturer>
+        <type>LIGHTING</type>
+        <intensity>10.0</intensity>
+        <maxIntensity>20.0</maxIntensity>
+    </lighting>
 </accessories>

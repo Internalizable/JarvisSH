@@ -20,7 +20,7 @@ public class StatusFilter implements IFilter {
     @Override
     public Predicate<Operation> getPredicate(Object filterValue) {
         return operation -> {
-            if(operation.getStatus() == null)
+            if (operation.getStatus() == null)
                 return false;
 
             return operation.getStatus().stream().anyMatch(s -> s.contains((String) filterValue));

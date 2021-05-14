@@ -17,13 +17,16 @@ import java.util.Date;
 import java.util.List;
 
 public class JarvisLists {
-    @Getter @Setter
+    @Getter
+    @Setter
     private static List<Operation> operationList;
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private static List<User> usersList;
 
-    @Getter @Setter
+    @Getter
+    @Setter
     private static List<Accessory> accessoryList;
 
     public JarvisLists() {
@@ -53,7 +56,7 @@ public class JarvisLists {
 
         int id;
 
-        if(autoIncrementation == null)
+        if (autoIncrementation == null)
             id = 1;
         else
             id = autoIncrementation.getId() + 1;
@@ -92,7 +95,7 @@ public class JarvisLists {
     public static void showChangeOfStates(int id) {
         Operation search = getOperationFromID(id);
 
-        if(search == null) {
+        if (search == null) {
             System.out.println("No operation could be found with the given ID");
             return;
         }

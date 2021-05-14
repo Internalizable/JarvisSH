@@ -1,41 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
-<VBox style="-fx-background-color: linear-gradient(to bottom, #12284d, #1e2134);;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.internalizable.jarvis.gui.controllers.MenuController">
-  <children>
-    <MenuBar VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="User">
-          <items>
-            <MenuItem fx:id="createUser" mnemonicParsing="false" text="Create new user" />
-          </items>
-        </Menu>
-      </menus>
-    </MenuBar>
-    <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
-      <items>
-        <AnchorPane prefHeight="400.0" style="-fx-background-color: linear-gradient(to bottom, #12284d, #1e2134);;">
-               <children>
-                  <ChoiceBox fx:id="itemChoice" layoutX="53.0" layoutY="81.0" />
-                  <Label layoutX="16.0" layoutY="36.0" text="Choose item type" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-        </AnchorPane>
-            <TableView fx:id="table" />
-      </items>
-    </SplitPane>
-  </children>
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      style="-fx-background-color: linear-gradient(to bottom, #12284d, #1e2134);;" xmlns="http://javafx.com/javafx/15.0.1"
+      fx:controller="me.internalizable.jarvis.gui.controllers.MenuController">
+    <children>
+        <MenuBar VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="User">
+                    <items>
+                        <MenuItem fx:id="createUser" mnemonicParsing="false" text="Create new user"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0"
+                   VBox.vgrow="ALWAYS">
+            <items>
+                <AnchorPane prefHeight="400.0"
+                            style="-fx-background-color: linear-gradient(to bottom, #12284d, #1e2134);;">
+                    <children>
+                        <ChoiceBox fx:id="itemChoice" layoutX="53.0" layoutY="81.0"/>
+                        <Label layoutX="16.0" layoutY="36.0" text="Choose item type" textFill="WHITE">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <TableView fx:id="table"/>
+            </items>
+        </SplitPane>
+    </children>
 </VBox>

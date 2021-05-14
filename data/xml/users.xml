@@ -1,26 +1,26 @@
 <users>
-   <user>
-      <id>1</id>
-      <name>Elie Sfeir</name>
-      <password>ElieTGMMC1</password>
-      <type>MEMBER</type>
-   </user>
-   <user>
-      <id>2</id>
-      <name>Joseph Sfeir</name>
-      <password>Joseph123</password>
-      <type>MEMBER</type>
-   </user>
-   <user>
-      <id>3</id>
-      <name>Georges</name>
-      <password>af6e967f39312c00d686f16b0b640289f5efb9d21b8e11804453e7f54ab829ea</password>
-      <type>ADMINISTRATOR</type>
-   </user>
-   <user>
-      <id>4</id>
-      <name>Internalizable</name>
-      <password>2f3d856cd1a5f7d0769cf8356846aebd497894412f9a76c165bd4ce5dc9a80c7</password>
-      <type>VISITOR</type>
-   </user>
+    <user>
+        <id>1</id>
+        <name>Elie Sfeir</name>
+        <password>ElieTGMMC1</password>
+        <type>MEMBER</type>
+    </user>
+    <user>
+        <id>2</id>
+        <name>Joseph Sfeir</name>
+        <password>Joseph123</password>
+        <type>MEMBER</type>
+    </user>
+    <user>
+        <id>3</id>
+        <name>Georges</name>
+        <password>af6e967f39312c00d686f16b0b640289f5efb9d21b8e11804453e7f54ab829ea</password>
+        <type>ADMINISTRATOR</type>
+    </user>
+    <user>
+        <id>4</id>
+        <name>Internalizable</name>
+        <password>2f3d856cd1a5f7d0769cf8356846aebd497894412f9a76c165bd4ce5dc9a80c7</password>
+        <type>VISITOR</type>
+    </user>
 </users>

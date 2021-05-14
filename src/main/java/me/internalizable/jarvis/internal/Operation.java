@@ -5,7 +5,6 @@ import dev.morphia.annotations.Id;
 import lombok.Getter;
 import lombok.Setter;
 import me.internalizable.jarvis.internal.users.User;
-import me.internalizable.jarvis.utils.FormatMarkdown;
 import me.internalizable.jarvis.utils.StaticUtils;
 import org.simpleframework.xml.Element;
 import org.simpleframework.xml.ElementList;
@@ -14,7 +13,8 @@ import org.simpleframework.xml.Root;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-@Getter @Setter
+@Getter
+@Setter
 @Root(name = "operation")
 @Entity("operations")
 public class Operation {
@@ -41,10 +41,11 @@ public class Operation {
     private transient User user;
     private transient Accessory accessory;
 
-    public Operation() {}
+    public Operation() {
+    }
 
     public void printStatusList() {
-        if(status == null)
+        if (status == null)
             System.out.println("\tNo status set.");
         else
             status.forEach(s -> System.out.println("\t- " + s));
@@ -62,7 +63,7 @@ public class Operation {
         System.out.println("Operation ID: " + getId());
         System.out.println("Operation Room: " + getRoomName());
         System.out.println("Operation Time: " + getDateString());
-        System.out.println("Operation Status: " );
+        System.out.println("Operation Status: ");
 
         printStatusList();
 

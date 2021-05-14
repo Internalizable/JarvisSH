@@ -5,16 +5,16 @@
     "resolution": "18",
     "range": "10",
     "angle": "WIDE",
-    "manufacturer":"CISCO TEL.",
-    "type":"CAMERA"
+    "manufacturer": "CISCO TEL.",
+    "type": "CAMERA"
   },
   {
     "id": "2",
     "name": "Temperature Control System",
     "temperature": "22.5",
     "fanSpeed": "MEDIUM",
-    "manufacturer":"ORCA O.",
-    "type":"TEMPERATURE"
+    "manufacturer": "ORCA O.",
+    "type": "TEMPERATURE"
   },
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "height": "20",
     "is4K": "true",
     "manufacturer": "Samsung",
-    "type":"TV"
+    "type": "TV"
   },
   {
     "id": "4",

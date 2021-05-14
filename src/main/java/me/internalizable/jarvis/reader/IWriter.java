@@ -1,4 +1,5 @@
 package me.internalizable.jarvis.reader;
+
 import java.util.List;
 
 public interface IWriter {

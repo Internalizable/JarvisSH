@@ -1,95 +1,95 @@
 <operations>
-   <operation>
-      <id>8</id>
-      <userID>4</userID>
-      <roomName>Kitchen</roomName>
-      <epochMillis>1719259694834</epochMillis>
-      <accessoryID>1</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Turned ON</string>
-      </status>
-   </operation>
-   <operation>
-      <id>9</id>
-      <userID>3</userID>
-      <roomName>Room 1</roomName>
-      <epochMillis>1719259694834</epochMillis>
-      <accessoryID>6</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Turned OFF</string>
-      </status>
-   </operation>
-   <operation>
-      <id>7</id>
-      <userID>4</userID>
-      <roomName>Kitchen</roomName>
-      <epochMillis>1719259693834</epochMillis>
-      <accessoryID>5</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>CO2 Detected in Room</string>
-         <string>Starting filter</string>
-      </status>
-   </operation>
-   <operation>
-      <id>6</id>
-      <userID>3</userID>
-      <roomName>Kitchen</roomName>
-      <epochMillis>1719259693734</epochMillis>
-      <accessoryID>4</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Detected motion</string>
-      </status>
-   </operation>
-   <operation>
-      <id>5</id>
-      <userID>1</userID>
-      <roomName>Room 2</roomName>
-      <epochMillis>1719259693634</epochMillis>
-      <accessoryID>2</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Set temperature to 21C</string>
-         <string>Set Fan Control to MEDIUM</string>
-      </status>
-   </operation>
-   <operation>
-      <id>4</id>
-      <userID>3</userID>
-      <roomName>Living Room</roomName>
-      <epochMillis>1719259693534</epochMillis>
-      <accessoryID>3</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Set Volume to 95%</string>
-      </status>
-   </operation>
-   <operation>
-      <id>3</id>
-      <userID>4</userID>
-      <roomName>Living Room</roomName>
-      <epochMillis>1719259693434</epochMillis>
-      <accessoryID>3</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Turned ON</string>
-      </status>
-   </operation>
-   <operation>
-      <id>2</id>
-      <userID>1</userID>
-      <roomName>Room 2</roomName>
-      <epochMillis>1719259593434</epochMillis>
-      <accessoryID>2</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Turned ON</string>
-      </status>
-   </operation>
-   <operation>
-      <id>1</id>
-      <userID>1</userID>
-      <roomName>Room 1</roomName>
-      <epochMillis>1619259593434</epochMillis>
-      <accessoryID>6</accessoryID>
-      <status class="java.util.ArrayList">
-         <string>Turned ON</string>
-         <string>Light Intensity set to 85%</string>
-      </status>
-   </operation>
+    <operation>
+        <id>8</id>
+        <userID>4</userID>
+        <roomName>Kitchen</roomName>
+        <epochMillis>1719259694834</epochMillis>
+        <accessoryID>1</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Turned ON</string>
+        </status>
+    </operation>
+    <operation>
+        <id>9</id>
+        <userID>3</userID>
+        <roomName>Room 1</roomName>
+        <epochMillis>1719259694834</epochMillis>
+        <accessoryID>6</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Turned OFF</string>
+        </status>
+    </operation>
+    <operation>
+        <id>7</id>
+        <userID>4</userID>
+        <roomName>Kitchen</roomName>
+        <epochMillis>1719259693834</epochMillis>
+        <accessoryID>5</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>CO2 Detected in Room</string>
+            <string>Starting filter</string>
+        </status>
+    </operation>
+    <operation>
+        <id>6</id>
+        <userID>3</userID>
+        <roomName>Kitchen</roomName>
+        <epochMillis>1719259693734</epochMillis>
+        <accessoryID>4</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Detected motion</string>
+        </status>
+    </operation>
+    <operation>
+        <id>5</id>
+        <userID>1</userID>
+        <roomName>Room 2</roomName>
+        <epochMillis>1719259693634</epochMillis>
+        <accessoryID>2</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Set temperature to 21C</string>
+            <string>Set Fan Control to MEDIUM</string>
+        </status>
+    </operation>
+    <operation>
+        <id>4</id>
+        <userID>3</userID>
+        <roomName>Living Room</roomName>
+        <epochMillis>1719259693534</epochMillis>
+        <accessoryID>3</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Set Volume to 95%</string>
+        </status>
+    </operation>
+    <operation>
+        <id>3</id>
+        <userID>4</userID>
+        <roomName>Living Room</roomName>
+        <epochMillis>1719259693434</epochMillis>
+        <accessoryID>3</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Turned ON</string>
+        </status>
+    </operation>
+    <operation>
+        <id>2</id>
+        <userID>1</userID>
+        <roomName>Room 2</roomName>
+        <epochMillis>1719259593434</epochMillis>
+        <accessoryID>2</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Turned ON</string>
+        </status>
+    </operation>
+    <operation>
+        <id>1</id>
+        <userID>1</userID>
+        <roomName>Room 1</roomName>
+        <epochMillis>1619259593434</epochMillis>
+        <accessoryID>6</accessoryID>
+        <status class="java.util.ArrayList">
+            <string>Turned ON</string>
+            <string>Light Intensity set to 85%</string>
+        </status>
+    </operation>
 </operations>

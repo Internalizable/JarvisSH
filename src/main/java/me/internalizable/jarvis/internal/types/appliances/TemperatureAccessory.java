@@ -41,12 +41,12 @@ public class TemperatureAccessory extends Accessory implements IMonitor, IContro
         System.out.println("Turning off the temperature accessory");
     }
 
-    public enum FanSpeed {
-        LOW, MEDIUM, HIGH
-    }
-
     @Override
     public String toString() {
         return super.toString() + "\nTemperature: " + temperature + "\nFan Speed: " + fanSpeed.name();
+    }
+
+    public enum FanSpeed {
+        LOW, MEDIUM, HIGH
     }
 }

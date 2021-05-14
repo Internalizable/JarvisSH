@@ -16,7 +16,8 @@ import me.internalizable.jarvis.internal.users.UserType;
 import me.internalizable.jarvis.utils.JarvisLists;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class MenuController {
 
@@ -43,11 +44,11 @@ public class MenuController {
             table.getItems().clear();
             table.getColumns().clear();
 
-            if(itemChoice.getValue().equals("Operations"))
+            if (itemChoice.getValue().equals("Operations"))
                 buildOperationTable();
-            else if(itemChoice.getValue().equalsIgnoreCase("Accessories"))
+            else if (itemChoice.getValue().equalsIgnoreCase("Accessories"))
                 buildAccessoriesTable();
-            else if(itemChoice.getValue().equalsIgnoreCase("Users"))
+            else if (itemChoice.getValue().equalsIgnoreCase("Users"))
                 buildUsersTable();
         });
 

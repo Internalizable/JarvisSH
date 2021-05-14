@@ -6,7 +6,8 @@ import me.internalizable.jarvis.internal.Accessory;
 import me.internalizable.jarvis.internal.IMonitor;
 import org.simpleframework.xml.Element;
 
-@Getter @Setter
+@Getter
+@Setter
 public class CameraAccessory extends Accessory implements IMonitor {
 
     @Element(name = "resolution")
@@ -32,12 +33,12 @@ public class CameraAccessory extends Accessory implements IMonitor {
         System.out.println("Generating data");
     }
 
-    public enum CameraAngle {
-        MACRO, TRUE_DEPTH, WIDE, ULTRA_WIDE
-    }
-
     @Override
     public String toString() {
         return super.toString() + "\nResolution: " + resolution + "\nRange: " + range + "\nAngle: " + angle.name();
+    }
+
+    public enum CameraAngle {
+        MACRO, TRUE_DEPTH, WIDE, ULTRA_WIDE
     }
 }
