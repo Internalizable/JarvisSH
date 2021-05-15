@@ -27,8 +27,7 @@ public class Accessory {
     @Element(name = "type")
     private AccessoryType type;
 
-    public Accessory() {
-    }
+    public Accessory() {}
 
     public Accessory(int id) {
         this.id = id;

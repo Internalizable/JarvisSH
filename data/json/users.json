@@ -22,5 +22,11 @@
     "name": "Internalizable",
     "password": "2f3d856cd1a5f7d0769cf8356846aebd497894412f9a76c165bd4ce5dc9a80c7",
     "type": "VISITOR"
+  },
+  {
+    "id": 5,
+    "name": "Sara",
+    "password": "3d404e188e86d2652c3d7b44eb016f292aeefb083897056816cc19f0873dabaa",
+    "type": "ADMINISTRATOR"
   }
 ]

@@ -23,7 +23,10 @@ public class User {
     @Element(name = "type")
     private UserType type;
 
-    public User() {
+    public User() {}
+
+    public User(int id) {
+        this.id = id;
     }
 
     public void printUser() {

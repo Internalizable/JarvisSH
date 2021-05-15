@@ -41,7 +41,10 @@ public class Operation {
     private transient User user;
     private transient Accessory accessory;
 
-    public Operation() {
+    public Operation() { }
+
+    public Operation(int id) {
+        this.id = id;
     }
 
     public void printStatusList() {
